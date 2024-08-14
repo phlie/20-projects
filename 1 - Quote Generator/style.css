@@ -62,7 +62,6 @@ button {
   outline: none;
   padding: 0.25rem 1.4rem;
   box-shadow: 0 0.3rem rgba(93, 232, 153, 0.75);
-  transition: transform 0.0075s ease;
 }
 
 button:hover {
