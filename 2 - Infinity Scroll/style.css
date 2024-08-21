@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #13a8e8;
+    --secondary-color: #1df367;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    
+    margin: 0;
+    
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.75rem;
+    letter-spacing: 3px;
+    
+    margin-top: 4rem;
+    margin-bottom: 15px;
+    padding: 0.6rem;
+    
+    color: var(--secondary-color);
+    background-color: #333;
+
+    border-bottom: 17px solid var(--secondary-color);
+    border-top: 17px solid var(--primary-color);
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    size: 200%;
+}
+
+.blue {
+    color: var(--primary-color);
+}
+
+.green {
+    color: var(--secondary-color);
+}
+
+/* Image Container */
+.image-container {
+    margin: 10px 26%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 0.8rem;
+    border-radius: 1.75rem;
+    border: 8px solid var(--primary-color);
+}
+
+.image-container img:nth-child(even) {
+    border-color: var(--secondary-color);
+}
+
+
+/* Media Query for Large Smartphone */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .image-container {
+        margin: 0.8rem;
+    }
+}
